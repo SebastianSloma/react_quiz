@@ -1,4 +1,3 @@
-
 import { CategoryList } from '../components/CategoryList'
 
 export const HomePage = () => {
