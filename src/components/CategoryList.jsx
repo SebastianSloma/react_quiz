@@ -13,14 +13,14 @@ const [
 
 export const CategoryList = () => {
 	return (
-		<div className='flex flex-row flex-wrap justify-center gap-4 mt-10'>
+		<div className='flex flex-row flex-wrap justify-center gap-4 mt-10 group rounded-lg border border-transparent px-5 py-4 '>
 			{/* Category Python */}
 
 			<CategoryCard
 				category={categories.python}
 				src={imgPython}
 				alt={`Category ${categories.python}`}
-				gradientColor='from-blue-500 to-purple-500'
+				
 			/>
 
 			{/* Category JavaScript*/}
@@ -29,14 +29,14 @@ export const CategoryList = () => {
 				category={categories.javascript}
 				src={imgJavaScript}
 				alt={`Category ${categories.javascript}`}
-				gradientColor='from-blue-500 to-purple-500'
+				
 			/>
 			{/* Category React */}
 			<CategoryCard
 				category={categories.react}
 				src={imgReact}
 				alt={`Category ${categories.react}`}
-				gradientColor='from-blue-500 to-purple-500'
+				
 			/>
 
 			{/* Category NextJS */}
@@ -45,7 +45,7 @@ export const CategoryList = () => {
 				category={categories.nextjs}
 				src={imgNextJS}
 				alt={`Category ${categories.nextjs}`}
-				gradientColor='from-blue-500 to-purple-500'
+				
 			/>
 
 			{/* Category Html */}
@@ -54,7 +54,7 @@ export const CategoryList = () => {
 				category={categories.html}
 				src={imgHtml}
 				alt={`Category ${categories.html}`}
-				gradientColor='from-blue-500 to-purple-500'
+				
 			/>
 
 			{/* Category Css */}
@@ -63,7 +63,7 @@ export const CategoryList = () => {
 				category={categories.css}
 				src={imgCss}
 				alt={`Category ${categories.css}`}
-				gradientColor='from-blue-500 to-purple-500'
+				
 			/>
 
 			{/* Category TypeScript */}
@@ -72,7 +72,7 @@ export const CategoryList = () => {
 				category={categories.typescript}
 				src={imgTypeScript}
 				alt={`Category ${categories.typescript}`}
-				gradientColor='from-gray-200 to-gray-500'
+				
 			/>
 		</div>
 	);

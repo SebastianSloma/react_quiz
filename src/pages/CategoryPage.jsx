@@ -20,7 +20,7 @@ export const CategoryPage = () => {
 		questions.filter(question => question.category === category)
 	);
 	// const [questionsFiltered, setQuestionsFiltered] = useState(
-	// 	questions.filter(question => question.category === category)
+	// 	questions.filter(question => question.category === category))
 
 	const [indexQuestion, setIndexQuestion] = useState(0);
 	const [activeQuiz, setActiveQuiz] = useState(false);

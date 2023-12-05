@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export const Results = ({ score, questionsFiltered, onReset }) => {
 	return (
 		<div className='flex flex-col justify-evenly items-center shadow-xl rounded-lg w-[600px] h-[600px] gap-5'>
