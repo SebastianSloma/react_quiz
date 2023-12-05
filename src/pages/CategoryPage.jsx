@@ -31,8 +31,10 @@ export const CategoryPage = () => {
 	}, []);
 	// ?????????????????
 	return (
+		<div className='w-auto'>
+
 		<div
-			className='container my-8 flex flex-col items-center justify-center gap-10 border bg-slate-100 shadow-xl rounded-lg w-[600px] h-[600px]'
+			className='container my-8 flex flex-col  items-center justify-center gap-10 border bg-slate-100 shadow-xl rounded-lg w-[600px] h-[600px]'
 			>
 			{activeQuiz ? (
 				<Question
@@ -61,6 +63,7 @@ export const CategoryPage = () => {
 					</button>
 				</>
 			)}
+		</div>
 		</div>
 	);
 };

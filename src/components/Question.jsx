@@ -44,6 +44,8 @@ export const Question = ({
 		setIndexQuestion(0);
 	};
 
+
+
 	return (
 		<>
 			{activeResults ? (
@@ -78,7 +80,7 @@ export const Question = ({
 					</div>
 
 					{/* answers */}
-					<div className='grid grid-cols-2 gap-5'>
+					<div className='grid grid-cols-2 gap-5  '>
 						{/* map the layout of good and bad answers */}
 						{answersRandom.map((answer, index) => (
 							<button
@@ -94,8 +96,7 @@ export const Question = ({
                                 `}
 								key={answer}
 								onClick={() => checkAnswer(answer, index)}
-                                disabled={answered && selectAnswerIndex !==index}
-                                >
+								disabled={answered && selectAnswerIndex !== index}>
 								<p className='font-medium text-center-text sm'>{answer}</p>
 							</button>
 						))}
