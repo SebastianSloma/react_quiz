@@ -55,7 +55,7 @@ export const Question = ({
 					onReset={onReset}
 				/>
 			) : (
-				<div className='flex flex-col mt-10 justify-between shadow-xl bg-slate-100 w-[600px] h-[600px] p-10 rounded-lg'>
+				<div className='flex flex-col w-full mt-10 justify-between shadow-xl bg-slate-100  p-10 rounded-lg'>
 					<div className='flex justify-between'>
 						<span className='text-xl font-bold'>
 							{/* Number actual question and number all questions */}

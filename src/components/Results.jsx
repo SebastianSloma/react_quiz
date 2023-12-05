@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 /* eslint-disable react/prop-types */
 export const Results = ({ score, questionsFiltered, onReset }) => {
 	return (
-		<div className='flex flex-col bg-slate-100 border justify-evenly items-center shadow-xl rounded-lg w-[600px] h-[600px] gap-5'>
+		<div className='flex flex-col bg-slate-100 border justify-evenly items-center shadow-xl rounded-lg  gap-5 w-full'>
 			<h1 className='text=4xl font-bold text-3xl'>Results</h1>
 			<div className='flex flex-col gap-5 text-center text-lg font-bold'>
 				<span>You guessed right</span>
