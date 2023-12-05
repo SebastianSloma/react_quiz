@@ -18,13 +18,13 @@ export const Results = ({ score, questionsFiltered, onReset }) => {
 			</div>
 			<div className='flex gap-10'>
 				<button
-					className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600 hover:border-zinc-400'
+					className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600 '
 					onClick={onReset}>
 					Lets go again
 				</button>
 				
 				<Link to='/'>
-				<button className='border border-zinc-300 text-gray-700 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-900 hover:border-zinc-400'>
+				<button className='border border-zinc-300 text-gray-700 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-900'>
 					
 						Select a new quiz
 					

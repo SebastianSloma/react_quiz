@@ -71,7 +71,7 @@ export const Question = ({
 					</div>
 
 					<button
-						className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600 hover:border-zinc-400'
+						className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600'
 						onClick={onReset}>
 						Restart
 					</button>
@@ -104,7 +104,7 @@ export const Question = ({
 					{/* Conditional to show the next question button at the end of the question */}
 					{indexQuestion + 1 === questionsFiltered.length ? (
 						<button
-							className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600 hover:border-zinc-400'
+							className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600'
 							onClick={() => {
 								setAnswered(false);
 								setActiveResults(true);
@@ -113,7 +113,7 @@ export const Question = ({
 						</button>
 					) : (
 						<button
-							className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600 hover:border-zinc-400'
+							className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600 '
 							onClick={onNextQuestion}>
 							Next Question
 						</button>

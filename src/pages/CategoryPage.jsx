@@ -57,7 +57,7 @@ export const CategoryPage = () => {
 					</div>
 
 					<button
-						className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600 hover:border-zinc-400'
+						className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600'
 						onClick={() => setActiveQuiz(true)}>
 						Start Quiz
 					</button>
