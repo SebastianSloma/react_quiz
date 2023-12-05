@@ -32,8 +32,8 @@ export const CategoryPage = () => {
 	// ?????????????????
 	return (
 		<div
-			className='container flex flex-col items-center justify-center gap-10'
-			style={{ height: 'calc(100vh - 5rem)' }}>
+			className='container my-8 flex flex-col items-center justify-center gap-10 border bg-slate-100 shadow-xl rounded-lg w-[600px] h-[600px]'
+			>
 			{activeQuiz ? (
 				<Question
 					filteredQuestion={questionsFiltered[indexQuestion]}
@@ -55,7 +55,7 @@ export const CategoryPage = () => {
 					</div>
 
 					<button
-						className='text-white bg-gray-900 py-2 rounded-lg font-bold px-5 transition-all hover:bg-yellow-500 hover:text-gray-900'
+						className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600 hover:border-zinc-400'
 						onClick={() => setActiveQuiz(true)}>
 						Start Quiz
 					</button>

@@ -13,7 +13,7 @@ const [
 
 export const CategoryList = () => {
 	return (
-		<div className='flex flex-row flex-wrap justify-center gap-4 mt-10 group rounded-lg border border-transparent px-5 py-4 '>
+		<div className='grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-4 mt-10 group rounded-lg border border-transparent px-5 py-4 '>
 			{/* Category Python */}
 
 			<CategoryCard
