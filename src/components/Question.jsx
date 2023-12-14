@@ -44,8 +44,6 @@ export const Question = ({
 		setIndexQuestion(0);
 	};
 
-
-
 	return (
 		<>
 			{activeResults ? (
@@ -55,8 +53,8 @@ export const Question = ({
 					onReset={onReset}
 				/>
 			) : (
-				<div className='flex flex-col w-full mt-10 justify-between shadow-xl bg-slate-100  p-10 rounded-lg'>
-					<div className='flex justify-between'>
+				<div className='flex flex-col w-[800px] mt-10 justify-between shadow-xl bg-slate-100  p-10 rounded-lg'>
+					<div className='flex justify-between my-5'>
 						<span className='text-xl font-bold'>
 							{/* Number actual question and number all questions */}
 							{indexQuestion + 1} / {questionsFiltered.length}
@@ -71,12 +69,12 @@ export const Question = ({
 					</div>
 
 					<button
-						className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600'
+						className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 my-5 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600'
 						onClick={onReset}>
 						Restart
 					</button>
 					<div>
-						<h1 className='font-bold'>{filteredQuestion.question}</h1>
+						<h1 className='font-bold my-2'>{filteredQuestion.question}</h1>
 					</div>
 
 					{/* answers */}
@@ -104,7 +102,7 @@ export const Question = ({
 					{/* Conditional to show the next question button at the end of the question */}
 					{indexQuestion + 1 === questionsFiltered.length ? (
 						<button
-							className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600'
+							className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 my-5 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600'
 							onClick={() => {
 								setAnswered(false);
 								setActiveResults(true);
@@ -113,7 +111,7 @@ export const Question = ({
 						</button>
 					) : (
 						<button
-							className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600 '
+							className='border border-zinc-300 text-gray-500 bg-white px-5 py-2 my-5  rounded-lg shadow-xl hover:shadow-inner transition-all font-bold  hover:text-gray-600 '
 							onClick={onNextQuestion}>
 							Next Question
 						</button>
